@@ -1,2 +1,2 @@
 coverage==6.1.2
-flake8==4.0.1
+ruff==0.3.2

@@ -1,5 +1,5 @@
 lint:
-	flake8 .
+	ruff check .
 
 test:
 	python -m unittest

@@ -1,11 +1,11 @@
 from datetime import date
 from functools import lru_cache
-from typing import Dict, Set, List, Tuple, Optional
+from typing import Dict, Set, List, Tuple
 
 
 class StockExchange:
     """Base class for stock exchanges with optimized holiday lookups"""
-    
+
     def __init__(self):
         # Armazena feriados em um dicionário indexado por ano para acesso O(1)
         self._holidays_by_year: Dict[int, List[Tuple[date, str]]] = {}
