@@ -70,6 +70,19 @@ class NYSE:
         (date(2024, 12, 25), 'Christmas Day'),
         (date(2024, 12, 31), 'Last day of year')
     )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2025, 1, 1), 'New year'),
+        (date(2025, 1, 20), 'Martin Luther King, Jr. Day'),
+        (date(2025, 2, 17), "Washington's Birthday"),
+        (date(2025, 4, 18), 'Good Friday'),
+        (date(2025, 5, 26), 'Memorial Day'),
+        (date(2025, 6, 19), 'Juneteenth National Independence Day'),
+        (date(2025, 7, 4), 'Independence Day'),
+        (date(2025, 9, 1), 'Labor Day'),
+        (date(2025, 11, 27), 'Thanksgiving Day'),
+        (date(2025, 12, 25), 'Christmas Day'),
+        (date(2025, 12, 31), 'Last day of year')
+    )
 
 
 class CME:
@@ -127,6 +140,32 @@ class CME:
         (date(2023, 11, 23), 'Thanksgiving Day'),
         (date(2023, 12, 25), 'Christmas Day'),
         (date(2023, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2024, 1, 1), 'New year'),
+        (date(2024, 1, 15), 'Martin Luther King, Jr. Day'),
+        (date(2024, 2, 19), "Washington's Birthday"),
+        (date(2024, 3, 29), 'Good Friday'),
+        (date(2024, 5, 27), 'Memorial Day'),
+        (date(2024, 6, 19), 'Juneteenth National Independence Day'),
+        (date(2024, 7, 4), 'Independence Day'),
+        (date(2024, 9, 2), 'Labor Day'),
+        (date(2024, 11, 28), 'Thanksgiving Day'),
+        (date(2024, 12, 25), 'Christmas Day'),
+        (date(2024, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2025, 1, 1), 'New year'),
+        (date(2025, 1, 20), 'Martin Luther King, Jr. Day'),
+        (date(2025, 2, 17), "Washington's Birthday"),
+        (date(2025, 4, 18), 'Good Friday'),
+        (date(2025, 5, 26), 'Memorial Day'),
+        (date(2025, 6, 19), 'Juneteenth National Independence Day'),
+        (date(2025, 7, 4), 'Independence Day'),
+        (date(2025, 9, 1), 'Labor Day'),
+        (date(2025, 11, 27), 'Thanksgiving Day'),
+        (date(2025, 12, 25), 'Christmas Day'),
+        (date(2025, 12, 31), 'Last day of year')
     )
 
 
@@ -198,6 +237,36 @@ class B3:
         (date(2023, 11, 15), 'Republic Day'),
         (date(2023, 12, 25), 'Christmas Day'),
         (date(2023, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2024, 1, 1), 'New year'),
+        (date(2024, 2, 12), 'Carnaval Monday'),
+        (date(2024, 2, 13), 'Carnaval'),
+        (date(2024, 3, 29), 'Good Friday'),
+        (date(2024, 4, 21), "Tiradentes' Day"),
+        (date(2024, 5, 1), 'Labour Day'),
+        (date(2024, 5, 30), 'Corpus Christi'),
+        (date(2024, 9, 7), 'Independence Day'),
+        (date(2024, 10, 12), 'Our Lady of Aparecida'),
+        (date(2024, 11, 2), "All Souls' Day"),
+        (date(2024, 11, 15), 'Republic Day'),
+        (date(2024, 12, 25), 'Christmas Day'),
+        (date(2024, 12, 31), 'Last day of year')
+    )
+    HOLIDAYS = HOLIDAYS + (
+        (date(2025, 1, 1), 'New year'),
+        (date(2025, 3, 3), 'Carnaval Monday'),
+        (date(2025, 3, 4), 'Carnaval'),
+        (date(2025, 4, 18), 'Good Friday'),
+        (date(2025, 4, 21), "Tiradentes' Day"),
+        (date(2025, 5, 1), 'Labour Day'),
+        (date(2025, 6, 19), 'Corpus Christi'),
+        (date(2025, 9, 7), 'Independence Day'),
+        (date(2025, 10, 12), 'Our Lady of Aparecida'),
+        (date(2025, 11, 2), "All Souls' Day"),
+        (date(2025, 11, 15), 'Republic Day'),
+        (date(2025, 12, 25), 'Christmas Day'),
+        (date(2025, 12, 31), 'Last day of year')
     )
 
 
