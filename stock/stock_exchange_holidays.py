@@ -588,10 +588,16 @@ class Holidays:
         self.stock_exchange = exchange
 
     def get_holidays(self):
+        if self.stock_exchange is None:
+            return []
         return self.stock_exchange.holidays
 
     def get_holidays_by_year(self, year):
+        if self.stock_exchange is None:
+            return []
         return self.stock_exchange.get_holidays_by_year(year)
 
     def is_date_holiday(self, date):
+        if self.stock_exchange is None:
+            return False
         return self.stock_exchange.is_holiday(date)
