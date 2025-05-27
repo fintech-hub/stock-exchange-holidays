@@ -7,14 +7,14 @@ class StockExchange:
     """Base class for stock exchanges with optimized holiday lookups"""
 
     def __init__(self):
-        # Armazena feriados em um dicionário indexado por ano para acesso O(1)
+        # Store holidays in a year-indexed dictionary for O(1) access
         self._holidays_by_year: Dict[int, List[Tuple[date, str]]] = {}
-        # Set de datas para verificação rápida O(1) se uma data é feriado
+        # Set of dates for fast O(1) holiday checking
         self._holiday_dates: Set[date] = set()
         self._initialize_holidays()
 
     def _add_holiday(self, holiday_date: date, description: str) -> None:
-        """Adiciona um feriado aos índices internos"""
+        """Adds a holiday to internal indexes"""
         year = holiday_date.year
         if year not in self._holidays_by_year:
             self._holidays_by_year[year] = []
@@ -23,7 +23,7 @@ class StockExchange:
 
     @property
     def holidays(self) -> List[Tuple[date, str]]:
-        """Retorna todos os feriados ordenados por data"""
+        """Returns all holidays sorted by date"""
         all_holidays = []
         for year_holidays in self._holidays_by_year.values():
             all_holidays.extend(year_holidays)
@@ -31,11 +31,11 @@ class StockExchange:
 
     @lru_cache(maxsize=128)
     def get_holidays_by_year(self, year: int) -> List[Tuple[date, str]]:
-        """Retorna feriados de um ano específico com cache"""
+        """Returns holidays for a specific year with cache"""
         return sorted(self._holidays_by_year.get(year, []), key=lambda x: x[0])
 
     def is_holiday(self, check_date: date) -> bool:
-        """Verifica se uma data é feriado em O(1)"""
+        """Checks if a date is a holiday in O(1)"""
         return check_date in self._holiday_dates
 
 
