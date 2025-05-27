@@ -12,7 +12,7 @@ A Python module for managing stock exchange holidays for major exchanges worldwi
 
 ## Features
 
-- Holiday management for years 2020-2025
+- Holiday management for years 2020-2026
 - Optimized data structures for O(1) holiday lookups
 - LRU cache for frequently accessed years
 - Type hints for better IDE support
