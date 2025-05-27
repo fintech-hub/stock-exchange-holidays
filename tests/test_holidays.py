@@ -81,6 +81,19 @@ class TestNYSE(TestCase):
             date(2025, 11, 27): True,
             date(2025, 12, 25): True,
             date(2025, 12, 26): False,
+            # 2026
+            date(2026, 1, 1): True,
+            date(2026, 1, 19): True,
+            date(2026, 2, 16): True,
+            date(2026, 4, 3): True,
+            date(2026, 5, 25): True,
+            date(2026, 6, 19): True,
+            date(2026, 7, 4): True,
+            date(2026, 9, 7): True,
+            date(2026, 11, 26): True,
+            date(2026, 12, 25): True,
+            date(2026, 12, 26): False,
+            date(2026, 12, 31): True,
         }
 
     def test_nyse_all_holidays(self):
@@ -129,6 +142,11 @@ class TestNYSE(TestCase):
 
     def test_nyse_holidays_2025(self):
         year = 2025
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 11)
+
+    def test_nyse_holidays_2026(self):
+        year = 2026
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 11)
 
@@ -210,6 +228,19 @@ class TestCME(TestCase):
             date(2025, 11, 27): True,
             date(2025, 12, 25): True,
             date(2025, 12, 26): False,
+            # 2026
+            date(2026, 1, 1): True,
+            date(2026, 1, 19): True,
+            date(2026, 2, 16): True,
+            date(2026, 4, 3): True,
+            date(2026, 5, 25): True,
+            date(2026, 6, 19): True,
+            date(2026, 7, 4): True,
+            date(2026, 9, 7): True,
+            date(2026, 11, 26): True,
+            date(2026, 12, 25): True,
+            date(2026, 12, 26): False,
+            date(2026, 12, 31): True,
         }
 
     def test_cme_all_holidays(self):
@@ -258,6 +289,11 @@ class TestCME(TestCase):
 
     def test_cme_holidays_2025(self):
         year = 2025
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 11)
+
+    def test_cme_holidays_2026(self):
+        year = 2026
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 11)
 
@@ -362,6 +398,21 @@ class TestB3(TestCase):
             date(2025, 12, 25): True,
             date(2025, 12, 31): True,
             date(2025, 12, 26): False,
+            # 2026
+            date(2026, 1, 1): True,
+            date(2026, 2, 16): True,
+            date(2026, 2, 17): True,
+            date(2026, 4, 3): True,
+            date(2026, 4, 21): True,
+            date(2026, 5, 1): True,
+            date(2026, 6, 11): True,
+            date(2026, 9, 7): True,
+            date(2026, 10, 12): True,
+            date(2026, 11, 2): True,
+            date(2026, 11, 15): True,
+            date(2026, 12, 25): True,
+            date(2026, 12, 31): True,
+            date(2026, 12, 26): False,
         }
 
     def test_b3_all_holidays(self):
@@ -406,6 +457,11 @@ class TestB3(TestCase):
 
     def test_b3_holidays_2025(self):
         year = 2025
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 13)
+
+    def test_b3_holidays_2026(self):
+        year = 2026
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 13)
 
@@ -542,6 +598,24 @@ class TestSSE(TestCase):
             date(2025, 10, 3): True,
             date(2025, 10, 6): True,
             date(2025, 10, 7): True,
+            # 2026
+            date(2026, 1, 1): True,
+            date(2026, 1, 29): True,
+            date(2026, 1, 30): True,
+            date(2026, 1, 31): True,
+            date(2026, 2, 3): True,
+            date(2026, 2, 4): True,
+            date(2026, 4, 4): True,
+            date(2026, 5, 1): True,
+            date(2026, 5, 2): True,
+            date(2026, 5, 5): True,
+            date(2026, 5, 31): True,
+            date(2026, 10, 1): True,
+            date(2026, 10, 2): True,
+            date(2026, 10, 3): True,
+            date(2026, 10, 6): True,
+            date(2026, 10, 7): True,
+            date(2026, 12, 25): False,
         }
 
     def test_sse_all_holidays(self):
@@ -593,6 +667,11 @@ class TestSSE(TestCase):
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 16)
 
+    def test_sse_holidays_2026(self):
+        year = 2026
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 16)
+
 
 class TestJPX(TestCase):
 
@@ -638,6 +717,30 @@ class TestJPX(TestCase):
             date(2025, 11, 23): True,
             date(2025, 11, 24): True,  # Observed
             date(2025, 12, 31): True,
+            # 2026
+            date(2026, 1, 1): True,
+            date(2026, 1, 2): True,
+            date(2026, 1, 3): True,
+            date(2026, 1, 13): True,
+            date(2026, 2, 11): True,
+            date(2026, 2, 23): True,
+            date(2026, 2, 24): True,
+            date(2026, 3, 20): True,
+            date(2026, 4, 29): True,
+            date(2026, 5, 3): True,
+            date(2026, 5, 4): True,
+            date(2026, 5, 5): True,
+            date(2026, 5, 6): True,
+            date(2026, 7, 21): True,
+            date(2026, 8, 11): True,
+            date(2026, 9, 15): True,
+            date(2026, 9, 23): True,
+            date(2026, 10, 13): True,
+            date(2026, 11, 3): True,
+            date(2026, 11, 23): True,
+            date(2026, 11, 24): True,
+            date(2026, 12, 31): True,
+            date(2026, 12, 25): False,
         }
 
     def test_jpx_all_holidays(self):
@@ -688,5 +791,10 @@ class TestJPX(TestCase):
 
     def test_jpx_holidays_2025(self):
         year = 2025
+        holidays_by_year = self.holidays.get_holidays_by_year(year)
+        self.assertEqual(len(holidays_by_year), 22)
+
+    def test_jpx_holidays_2026(self):
+        year = 2026
         holidays_by_year = self.holidays.get_holidays_by_year(year)
         self.assertEqual(len(holidays_by_year), 22)

@@ -122,6 +122,19 @@ class NYSE(StockExchange):
         self._add_holiday(date(2025, 12, 25), 'Christmas Day')
         self._add_holiday(date(2025, 12, 31), 'Last day of year')
 
+        # 2026
+        self._add_holiday(date(2026, 1, 1), 'New year')
+        self._add_holiday(date(2026, 1, 19), 'Martin Luther King, Jr. Day')
+        self._add_holiday(date(2026, 2, 16), "Washington's Birthday")
+        self._add_holiday(date(2026, 4, 3), 'Good Friday')
+        self._add_holiday(date(2026, 5, 25), 'Memorial Day')
+        self._add_holiday(date(2026, 6, 19), 'Juneteenth National Independence Day')
+        self._add_holiday(date(2026, 7, 4), 'Independence Day')
+        self._add_holiday(date(2026, 9, 7), 'Labor Day')
+        self._add_holiday(date(2026, 11, 26), 'Thanksgiving Day')
+        self._add_holiday(date(2026, 12, 25), 'Christmas Day')
+        self._add_holiday(date(2026, 12, 31), 'Last day of year')
+
 
 class CME(StockExchange):
     """
@@ -205,6 +218,19 @@ class CME(StockExchange):
         self._add_holiday(date(2025, 11, 27), 'Thanksgiving Day')
         self._add_holiday(date(2025, 12, 25), 'Christmas Day')
         self._add_holiday(date(2025, 12, 31), 'Last day of year')
+
+        # 2026
+        self._add_holiday(date(2026, 1, 1), 'New year')
+        self._add_holiday(date(2026, 1, 19), 'Martin Luther King, Jr. Day')
+        self._add_holiday(date(2026, 2, 16), "Washington's Birthday")
+        self._add_holiday(date(2026, 4, 3), 'Good Friday')
+        self._add_holiday(date(2026, 5, 25), 'Memorial Day')
+        self._add_holiday(date(2026, 6, 19), 'Juneteenth National Independence Day')
+        self._add_holiday(date(2026, 7, 4), 'Independence Day')
+        self._add_holiday(date(2026, 9, 7), 'Labor Day')
+        self._add_holiday(date(2026, 11, 26), 'Thanksgiving Day')
+        self._add_holiday(date(2026, 12, 25), 'Christmas Day')
+        self._add_holiday(date(2026, 12, 31), 'Last day of year')
 
 
 class B3(StockExchange):
@@ -306,6 +332,21 @@ class B3(StockExchange):
         self._add_holiday(date(2025, 11, 15), 'Republic Day')
         self._add_holiday(date(2025, 12, 25), 'Christmas Day')
         self._add_holiday(date(2025, 12, 31), 'Last day of year')
+
+        # 2026
+        self._add_holiday(date(2026, 1, 1), 'New year')
+        self._add_holiday(date(2026, 2, 16), 'Carnaval Monday')
+        self._add_holiday(date(2026, 2, 17), 'Carnaval')
+        self._add_holiday(date(2026, 4, 3), 'Good Friday')
+        self._add_holiday(date(2026, 4, 21), "Tiradentes' Day")
+        self._add_holiday(date(2026, 5, 1), 'Labour Day')
+        self._add_holiday(date(2026, 6, 11), 'Corpus Christi')
+        self._add_holiday(date(2026, 9, 7), 'Independence Day')
+        self._add_holiday(date(2026, 10, 12), 'Our Lady of Aparecida')
+        self._add_holiday(date(2026, 11, 2), "All Souls' Day")
+        self._add_holiday(date(2026, 11, 15), 'Republic Day')
+        self._add_holiday(date(2026, 12, 25), 'Christmas Day')
+        self._add_holiday(date(2026, 12, 31), 'Last day of year')
 
 
 class SSE(StockExchange):
@@ -435,6 +476,24 @@ class SSE(StockExchange):
         self._add_holiday(date(2025, 10, 3), 'National Day Holiday')
         self._add_holiday(date(2025, 10, 6), 'National Day Holiday')
         self._add_holiday(date(2025, 10, 7), 'National Day Holiday')
+
+        # 2026
+        self._add_holiday(date(2026, 1, 1), 'New year')
+        self._add_holiday(date(2026, 1, 29), 'Chinese New Year')
+        self._add_holiday(date(2026, 1, 30), 'Chinese New Year Holiday')
+        self._add_holiday(date(2026, 1, 31), 'Chinese New Year Holiday')
+        self._add_holiday(date(2026, 2, 3), 'Chinese New Year Holiday')
+        self._add_holiday(date(2026, 2, 4), 'Chinese New Year Holiday')
+        self._add_holiday(date(2026, 4, 4), 'Qingming Festival')
+        self._add_holiday(date(2026, 5, 1), 'Labour Day')
+        self._add_holiday(date(2026, 5, 2), 'Labour Day Holiday')
+        self._add_holiday(date(2026, 5, 5), 'Labour Day Holiday')
+        self._add_holiday(date(2026, 5, 31), 'Dragon Boat Festival')
+        self._add_holiday(date(2026, 10, 1), 'National Day')
+        self._add_holiday(date(2026, 10, 2), 'National Day Holiday')
+        self._add_holiday(date(2026, 10, 3), 'National Day Holiday')
+        self._add_holiday(date(2026, 10, 6), 'National Day Holiday')
+        self._add_holiday(date(2026, 10, 7), 'National Day Holiday')
 
 
 class JPX(StockExchange):
@@ -577,6 +636,30 @@ class JPX(StockExchange):
         self._add_holiday(date(2025, 11, 23), "Labor Thanksgiving Day")
         self._add_holiday(date(2025, 11, 24), "Labor Thanksgiving Day observed")
         self._add_holiday(date(2025, 12, 31), "New Year's Eve")
+
+        # 2026
+        self._add_holiday(date(2026, 1, 1), "New Year's Day")
+        self._add_holiday(date(2026, 1, 2), "New Year's Holiday")
+        self._add_holiday(date(2026, 1, 3), "New Year's Holiday")
+        self._add_holiday(date(2026, 1, 13), "Coming of Age Day")
+        self._add_holiday(date(2026, 2, 11), "National Foundation Day")
+        self._add_holiday(date(2026, 2, 23), "Emperor's Birthday")
+        self._add_holiday(date(2026, 2, 24), "Emperor's Birthday observed")
+        self._add_holiday(date(2026, 3, 20), "Vernal Equinox Day")
+        self._add_holiday(date(2026, 4, 29), "Showa Day")
+        self._add_holiday(date(2026, 5, 3), "Constitution Memorial Day")
+        self._add_holiday(date(2026, 5, 4), "Greenery Day")
+        self._add_holiday(date(2026, 5, 5), "Children's Day")
+        self._add_holiday(date(2026, 5, 6), "Children's Day observed")
+        self._add_holiday(date(2026, 7, 21), "Marine Day")
+        self._add_holiday(date(2026, 8, 11), "Mountain Day")
+        self._add_holiday(date(2026, 9, 15), "Respect for the Aged Day")
+        self._add_holiday(date(2026, 9, 23), "Autumnal Equinox Day")
+        self._add_holiday(date(2026, 10, 13), "Health and Sports Day")
+        self._add_holiday(date(2026, 11, 3), "Culture Day")
+        self._add_holiday(date(2026, 11, 23), "Labor Thanksgiving Day")
+        self._add_holiday(date(2026, 11, 24), "Labor Thanksgiving Day observed")
+        self._add_holiday(date(2026, 12, 31), "New Year's Eve")
 
 
 class Holidays:
